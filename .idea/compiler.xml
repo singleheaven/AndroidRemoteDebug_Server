@@ -7,11 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringBootServer" />
+        <module name="DebugServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SpringBootServer" target="7" />
+      <module name="DebugServer" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>

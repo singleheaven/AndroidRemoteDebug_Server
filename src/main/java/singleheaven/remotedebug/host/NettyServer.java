@@ -11,8 +11,6 @@ import io.netty.handler.codec.LengthFieldPrepender;
 import io.netty.handler.codec.protobuf.ProtobufDecoder;
 import io.netty.handler.codec.protobuf.ProtobufEncoder;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * <p>@ProjectName:     BoChat</p>
@@ -26,11 +24,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * <p>@email:           chenshichao@outlook.com</p>
  */
 @Slf4j
-@SpringBootApplication
 public class NettyServer {
 
     public static void main(String[] args) {
-        SpringApplication.run(NettyServer.class, args);
         //boss线程监听端口，worker线程负责数据读写
         EventLoopGroup boss = new NioEventLoopGroup();
         EventLoopGroup worker = new NioEventLoopGroup();
